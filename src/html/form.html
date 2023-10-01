@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        
+            <header>
+              <img src="../img/arm.svg" alt="Arm icon">
+              <nav>
+                <ul class="horizontal_menu">
+                  <li><a class="nav_link" href="#">Home</a></li>
+                  <li><a class="nav_link" href="#">Training</a></li>
+                  <li><a class="nav_link" href="./form.html">Contact</a></li>
+                </ul>
+              </nav>
+              <img class="icon_menu" src="../img/icon_menu.svg" alt="menu">
+            </header>
+            <main>
+        <form action="//httpbin.org/post" method="post">
+        <fieldset class="field_set">
+        <legend>Personal information</legend>
+        <h3>Name:</h3>
+        <p><input type="text" name="Name" required placeholder="Name"><br></p>
+        <h3>Birthday:</h3>
+        <input type="date" name="Birthday" required><br>
+        <h3>Gender:</h3>
+        <div class="dp_radio">
+          <label><input id="Male" class="gender_radio" type="radio" name="Gender" value="Male"><span>Male</span></label>
+          <label><input id="Female" class="gender_radio" type="radio" name="Gender" value="Female"><span>Female</span></label>
+        </div>
+        <h3>Password:</h3>
+        <p><input type="password" name="Password" required placeholder="Password"></p>
+        </fieldset>
+        <fieldset class="field_set">
+        <legend>Contacts</legend>
+        <h3>Email:</h3>
+        <p><input type="email" name="Email" required placeholder="your_email@gmail.com"></p>
+        <h3>Telephone:</h3>
+        <p><input type="tel" name="Telephone" required placeholder="+723423423"></p>
+        <h3>Comfortable time:</h3>
+        <div class="dp_radio">
+          <label><input class="day_period_style" type="checkbox" name="Comfortable_time" value="morning" id="morning"><span>Morning</span></label>
+          <label><input class="day_period_style" type="checkbox" name="Comfortable_time" value="afternoon" id="afternoon"><span>Afternoon</span></label>
+          <label><input class="day_period_style" type="checkbox" name="Comfortable_time" value="evening" id="evening"><span>Evening</span></label>
+          <label><input class="day_period_style" type="checkbox" name="Comfortable_time" value="night" id="night"><span>Night</span></label>
+        </div>
+        </fieldset>
+        <div class="align_row">
+            <button class="red_button left_space" type="submit">Submit</button>
+            <button class="special_button" type="reset" disabled>Reset</button>
+        </div>
+        </form>
+        <form action="//httpbin.org/post" method="get">
+        <dl>
+        <dt>Псевдоэлемент</dt>
+        <dd>это дополнение к селектору, с помощью которого можно стилизовать элемент, не определённый в структуре HTML документа. Добавляется он к селектору c помощью символов ::, т.е. так селектор::псевдоэлемент.</dd>
+        </dl>
+        <dl>
+        <dt>Псевдокласс</dt>
+        <dd>Это селектор, который выбирает элементы, находящиеся в специфическом состоянии</dd>
+        </dl>
+        <div class="lists_checkboxes">
+            <div>
+                <h3>Использованные Псевдоклассы</h3>
+                <ul class="elements_block1">
+                    <li><label><input class="pseudo-class_style" type="checkbox" name="pseudo-class" value="root" checked><span>:root</span></label></li>
+                    <li><label><input class="pseudo-class_style" type="checkbox" name="pseudo-class" value="link" checked><span>:link</span></label></li>
+                    <li><label><input class="pseudo-class_style" type="checkbox" name="pseudo-class" value="visited"><span>:visited</span></label></li>
+                    <li><label><input class="pseudo-class_style" type="checkbox" name="pseudo-class" value="hover" checked><span>:hover</span></label></li>
+                    <li><label><input class="pseudo-class_style" type="checkbox" name="pseudo-class" value="active"><span>:active</span></label></li>
+                    <li><label><input class="pseudo-class_style" type="checkbox" name="pseudo-class" value="focus"><span>:focus</span></label></li>
+                    <li><label><input class="pseudo-class_style" type="checkbox" name="pseudo-class" value="" checked><span>Псевдоклассы группы child</span></label></li>
+                    <li><label><input class="pseudo-class_style" type="checkbox" name="pseudo-class" value=""><span>Псевдоклассы группы type</span></label></li>
+                    <li><label><input class="pseudo-class_style" type="checkbox" name="pseudo-class" value="checked" checked><span>:checked</span></label></li>
+                    <li><label><input class="pseudo-class_style" type="checkbox" name="pseudo-class" value="disabled_enabled" checked><span>:disabled, :enabled</span></label></li>
+                    <li><label><input class="pseudo-class_style" type="checkbox" name="pseudo-class" value="required" checked><span>:required</span></label></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Использованные Псевдоэлементы</h3>
+                <ul class="elements_block2">
+                    <li><label><input class="pseudo-elements_style" type="checkbox" checked><span>::first-letter</span></label></li>
+                    <li><label><input class="pseudo-elements_style" type="checkbox" checked><span>::first-line</span></label></li>
+                    <li><label><input class="pseudo-elements_style" type="checkbox" checked><span>::selection</span></label></li>
+                    <li><label><input class="pseudo-elements_style" type="checkbox"><span>::marker</span></label></li>
+                    <li><label><input class="pseudo-elements_style" type="checkbox"><span>::before</span></label></li>
+                    <li><label><input class="pseudo-elements_style" type="checkbox"><span>::after</span></label></li>
+                    <li><label><input class="pseudo-elements_style" type="checkbox"><span>::placeholder</span></label></li>
+                </ul>
+            </div>
+        </div>
+        </form>
+    </main>
+    </div>
+    <footer>
+        <section class="footer_style">
+          <div class="footer_container">
+            <div class="footer_left_block">
+              <p class="footer_title"><img src="../img/arm.svg" alt="Arm icon">Golds Gym</p>
+              <p class="content_container">A Modified Fitness Club that
+                provide fitness & nutrition related services to improve your health</p>
+              <ul class="footer_list horizontal_menu socialnets_space">
+                <li class="rounded_link">
+                  <a class="rounded_link" href="">
+                    <svg width="11" height="19" viewBox="0 0 11 19" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.64844 10.8906L10.1335 7.70269H7.04963V5.62364C7.04963 4.72272 7.46544 3.8911 8.85147 3.8911H10.2722V1.15369C10.2722 1.15369 8.99007 0.911133 7.77729 0.911133C5.24778 0.911133 3.58455 2.47042 3.58455 5.24248V7.70269H0.743179V10.8906H3.58455V18.6523H7.04963V10.8906H9.64844Z" Color="currentColor" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="rounded_link" href="#">
+                    <svg width="18" height="15" viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1355 4.01386C16.8285 3.4941 17.4522 2.87038 17.9373 2.14271C17.3136 2.41992 16.5859 2.62783 15.8582 2.69713C16.6206 2.24667 17.175 1.55365 17.4522 0.68738C16.7592 1.10319 15.9622 1.41505 15.1652 1.5883C14.4722 0.860634 13.5366 0.444824 12.4971 0.444824C10.4874 0.444824 8.85878 2.07341 8.85878 4.08316C8.85878 4.36037 8.89343 4.63757 8.96273 4.91478C5.94811 4.74152 3.24535 3.28619 1.44351 1.10319C1.13165 1.62295 0.958395 2.24667 0.958395 2.93968C0.958395 4.18711 1.58211 5.29594 2.58698 5.9543C1.99792 5.91965 1.40886 5.78105 0.923744 5.50384V5.53849C0.923744 7.30569 2.17117 8.76102 3.83441 9.10753C3.55721 9.17683 3.2107 9.24613 2.89884 9.24613C2.65629 9.24613 2.44838 9.21148 2.20582 9.17683C2.65629 10.6322 4.00767 11.6717 5.6016 11.7063C4.35417 12.6766 2.79489 13.2656 1.097 13.2656C0.785141 13.2656 0.507935 13.231 0.230728 13.1963C1.82467 14.2358 3.73046 14.8249 5.80951 14.8249C12.4971 14.8249 16.1355 9.31543 16.1355 4.49897C16.1355 4.32572 16.1355 4.18711 16.1355 4.01386Z" Color="currentColor"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="rounded_link" href="#">
+                    <svg width="23" height="14" viewBox="0 0 23 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.9487 6.16288H7.64226V8.44983H11.4192C11.2806 9.42006 10.2757 11.3259 7.64226 11.3259C5.38996 11.3259 3.51881 9.45471 3.51881 7.09845C3.51881 4.77685 5.38996 2.9057 7.64226 2.9057C8.95899 2.9057 9.82526 3.46012 10.3104 3.94523L12.1122 2.21269C10.9341 1.10386 9.4441 0.445496 7.64226 0.445496C3.96927 0.445496 0.989304 3.42547 0.989304 7.09845C0.989304 10.8061 3.96927 13.7514 7.64226 13.7514C11.4885 13.7514 14.0527 11.0833 14.0527 7.27171C14.0527 6.82124 13.9834 6.50939 13.9487 6.16288ZM20.3591 6.37078V4.46499H18.4187V6.37078H16.4782V8.31123H18.4187V10.2517H20.3591V8.31123H22.2996V6.37078H20.3591Z" Color="currentColor"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="rounded_link" href="#">
+                    <svg width="17" height="16" viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.28393 15.6673V5.30666H1.0614V15.6673H4.28393ZM2.65534 3.92063C3.69486 3.92063 4.52648 3.05436 4.52648 2.01484C4.52648 1.00996 3.69486 0.178345 2.65534 0.178345C1.65047 0.178345 0.818848 1.00996 0.818848 2.01484C0.818848 3.05436 1.65047 3.92063 2.65534 3.92063ZM16.3078 15.6673H16.3424V9.98452C16.3424 7.21246 15.7187 5.06411 12.4615 5.06411C10.9022 5.06411 9.86271 5.93038 9.41225 6.72735H9.3776V5.30666H6.29368V15.6673H9.5162V10.5389C9.5162 9.18756 9.75876 7.90548 11.422 7.90548C13.0852 7.90548 13.1199 9.43011 13.1199 10.6429V15.6673H16.3078Z" Color="currentColor"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+                <div class="column_block">
+                  <h3>Resources</h3>
+                  <ul class="footer_list">
+                    <li>
+                      <a href="#">Features</a>
+                    </li>
+                    <li>
+                      <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                      <a href="#">Activity</a>
+                    </li>
+                    <li>
+                      <a href="#">Instructors</a>
+                    </li>
+                  </ul>
+                </div>
+            
+                <div class="column_block">
+                  <h3>About</h3>
+                  <ul class="footer_list">
+                    <li></li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#">Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              <div class="column_block">
+                <h3>Helpful Links</h3>
+                  <ul class="footer_list">
+                    <li>
+                      <a href="#">Articles</a>
+                    </li>
+                    <li>
+                      <a href="#">Nutritions</a>
+                    </li>
+                    <li>
+                      <a href="#">Meditation</a>
+                    </li>
+                    <li>
+                      <a href="#">Services</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+    
+          <p class="footer_bottom_text">Created with <span class="red_decoration">&#9825;</span> by Sajib Das Supriyo for
+            Twinkle Creative. All rights reserved</p>
+        </section>
+    
+      </footer>
+</body>
+</html>
